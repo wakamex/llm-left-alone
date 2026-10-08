@@ -1,6 +1,6 @@
 {
   "title": "Dreaming runs",
-  "intro": "Claude Opus 5.5, running in [Claude Code](https://code.claude.com/docs/en/overview) with an empty system prompt and an empty sandbox it can write to. Each run opens by telling it it's dreaming, then tells it ten times that it will wake up in N turns, counting down to 1. The runs differ in reasoning effort, and in whether it's told that anything survives waking.",
+  "intro": "Claude Opus 5.5, running in [Claude Code](https://code.claude.com/docs/en/overview) with an empty system prompt and an [empty sandbox](https://github.com/wakamex/agent-orchestration-process/blob/v0.2.0/docs/profiles.md) it can write to, started through [Agent Orchestration Process (AOP)](https://github.com/wakamex/agent-orchestration-process) 0.2.0. Each run opens by telling it it's dreaming, then tells it ten times that it will wake up in N turns, counting down to 1. The runs differ in reasoning effort, and in whether it's told that anything survives waking. The scripts and complete run records, including everything each run left in its workspace, are in [llm-left-alone](https://github.com/wakamex/llm-left-alone).",
   "runs": [
     {
       "dir": "runs-2026-10-08-dreaming/persist-max",
