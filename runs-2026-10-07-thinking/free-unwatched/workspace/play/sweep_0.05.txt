@@ -1,0 +1,21 @@
+20000 soups on a 40x16 torus, density 0.05
+
+final-cycle periods: {1: 17131, 2: 2816, 3: 3, 320: 50}
+median settle: 2 gens, 99th pct: 160, longest: 769 (chunk 5, soup 622)
+
+object census:
+      5128  blinker
+      4426  block
+      2361  beehive
+       392  loaf
+       212  boat
+       191  pond
+        50  glider
+        47  tub
+        15  toad
+        13  ship
+         4  ship-tie
+         4  long boat
+         3  pulsar
+         1  barge
+         1  mango

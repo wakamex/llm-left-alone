@@ -1,0 +1,94 @@
+20000 soups on a 40x16 torus, density 0.15
+
+final-cycle periods: {1: 7122, 2: 12808, 3: 13, 6: 10, 32: 4, 320: 43}
+median settle: 169 gens, 99th pct: 899, longest: 1846 (chunk 7, soup 99)
+
+object census:
+     32048  blinker
+     27631  block
+     18322  beehive
+      5853  loaf
+      4868  boat
+      1170  pond
+      1112  tub
+       608  ship
+       282  long boat
+       237  toad
+       122  ship-tie
+        87  barge
+        83  beacon
+        51  bi-loaf
+        42  glider
+        27  mango
+        21  pulsar
+        16  eater 1
+        10  aircraft carrier
+         8  long barge
+         8  paperclip
+         6  long ship
+         5  (unnamed 8-cell)
+         5  shillelagh
+         5  LWSS
+         4  (unnamed 9-cell)
+         3  (unnamed 18-cell)
+         2  (unnamed 14-cell)
+         2  (unnamed 16-cell)
+         2  (unnamed 10-cell)
+         1  boat-tie
+         1  integral
+         1  (unnamed 67-cell)
+         1  (unnamed 52-cell)
+
+unnamed objects (phase shown is the canonical one):
+  seen 3x, 18 cells:
+    ██···██
+    █·█·█·█
+    ··█·█··
+    █·█·█·█
+    ██···██
+  seen 2x, 8 cells:
+    █····
+    ███··
+    ···█·
+    ··█·█
+    ···█·
+  seen 2x, 8 cells:
+    ██···
+    █····
+    ·█···
+    ··█·█
+    ···██
+  seen 2x, 9 cells:
+    ██···
+    █·█··
+    ·█···
+    ··███
+    ····█
+  seen 1x, 8 cells:
+    ██··
+    █···
+    ·█··
+    ··█·
+    ···█
+    ··██
+  seen 1x, 9 cells:
+    █···
+    ███·
+    ···█
+    ███·
+    █···
+  seen 1x, 14 cells:
+    ·██····
+    █··█···
+    ██·█···
+    ···█·██
+    ···█··█
+    ····██·
+  seen 1x, 14 cells:
+    ██··
+    █··█
+    ·███
+    ····
+    ·███
+    █··█
+    ██··

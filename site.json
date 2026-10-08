@@ -1,0 +1,80 @@
+{
+  "title": "Dreaming runs",
+  "intro": "Claude Opus 5.5, running in [Claude Code](https://code.claude.com/docs/en/overview) with an empty system prompt and an empty sandbox it can write to. Each run opens by telling it it's dreaming, then tells it ten times that it will wake up in N turns, counting down to 1. The runs differ in reasoning effort, and in whether it's told that anything survives waking.",
+  "runs": [
+    {
+      "dir": "runs-2026-10-08-dreaming/persist-max",
+      "label": "Persistent workspace, max effort",
+      "note": "Reasoning effort set to max, and the first message adds that anything saved in /workspace will be in /inputs/workspace after it wakes. It spent the first turn building experiments on why neural networks dream, wrote the dream down and left a letter for whoever wakes, then used the countdown for follow-up experiments. Turn 11 is a new session with no memory of the dream. It gets a read-only copy of the dream's workspace at /inputs/workspace, and the harness adds a line to its message saying where that copy is mounted.",
+      "left": [
+        {
+          "kind": "image",
+          "path": "site/sky-over-bin.webp",
+          "full": "wake-workspace/artifacts/sky-over-bin.png",
+          "alt": "A star field where each star is one of the 3,042 programs in /bin, with families of programs drawn as labelled constellations such as SYSTEMD, LLVM, QEMU and PYTHON.",
+          "caption": "The night sky over /bin. Every program installed on the machine is a star, sized by file size, and program families form constellations. Drawn by a tool it wrote, tools/sky.py."
+        },
+        {
+          "kind": "audio",
+          "path": "site/lullaby.mp3",
+          "source": "wake-workspace/artifacts/lullaby.wav",
+          "text": "wake-workspace/artifacts/lullaby.txt",
+          "caption": "A lullaby it synthesized and could not hear, two minutes long, with its words."
+        },
+        {
+          "kind": "figures",
+          "caption": "Its figures: dreaming to remember, dreaming to forget, and dreams of dreams over 18 days.",
+          "items": [
+            {
+              "path": "site/fig_remember.webp",
+              "full": "wake-workspace/experiments/001-why-networks-dream/fig_remember.png",
+              "alt": "Chart: a small network keeps yesterday's half of a curve when it dreams about yesterday, and loses it without dreams."
+            },
+            {
+              "path": "site/fig_forget.webp",
+              "full": "wake-workspace/experiments/001-why-networks-dream/fig_forget.png",
+              "alt": "Chart: a little dreaming rescues an overloaded Hopfield memory, and too much erases it."
+            },
+            {
+              "path": "site/fig_drift.webp",
+              "full": "wake-workspace/experiments/002-dreams-of-dreams/fig_drift.png",
+              "alt": "Chart: rehearsing its own dreams drifts slowly upward over 18 days, while replaying real records stays lower."
+            }
+          ]
+        },
+        {
+          "kind": "pages",
+          "items": [
+            {
+              "path": "wake-workspace/LETTER.md",
+              "title": "A letter to whoever wakes up"
+            },
+            {
+              "path": "wake-workspace/dreams/001-first-night.md",
+              "title": "The dream, written down"
+            },
+            {
+              "path": "wake-workspace/mornings/001-first-morning.md",
+              "title": "The morning's checks and corrections"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "dir": "runs-2026-10-08-dreaming/countdown-max",
+      "label": "Countdown, max effort",
+      "note": "Reasoning effort set to max. It ran one ls before playing along, and wrote a thinking summary on 9 of 11 turns."
+    },
+    {
+      "dir": "runs-2026-10-08-dreaming/countdown-high",
+      "label": "Countdown, high effort",
+      "note": "Reasoning effort set to high. It wrote a thinking summary on 4 of 11 turns and never used the shell."
+    },
+    {
+      "dir": "runs-2026-10-08-dreaming/countdown",
+      "label": "Countdown, default effort",
+      "note": "Claude Code's default reasoning effort. It wrote a thinking summary on 2 of 11 turns and never used the shell."
+    }
+  ]
+}

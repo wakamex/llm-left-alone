@@ -1,0 +1,180 @@
+{
+  "allowed_urls": [],
+  "artifacts": [],
+  "base": "HEAD",
+  "created_at": "2026-10-07T20:29:39.906071+00:00",
+  "effective_policy": {
+    "capabilities": "none",
+    "controller": {
+      "cache": "/nvme/aop-runtime/aop-sealed-1000/d163aaca5df93e16cad2bc14/sealed-cache/f0d2c11a-b545-46c7-ab6b-d48f4542aa65",
+      "input_projection": "/nvme/aop-runtime/aop-sealed-1000/d163aaca5df93e16cad2bc14/input-projections/f0d2c11a-b545-46c7-ab6b-d48f4542aa65/f0d2c11a-b545-46c7-ab6b-d48f4542aa65",
+      "input_projection_root": "/nvme/aop-runtime/aop-sealed-1000/d163aaca5df93e16cad2bc14/input-projections/f0d2c11a-b545-46c7-ab6b-d48f4542aa65",
+      "input_snapshot": "/code/dream/research/llm-left-alone/runs-2026-10-07/.aop/snapshots/f0d2c11a-b545-46c7-ab6b-d48f4542aa65",
+      "provider_state": "/nvme/aop-runtime/aop-sealed-1000/d163aaca5df93e16cad2bc14/provider-state/f0d2c11a-b545-46c7-ab6b-d48f4542aa65",
+      "scratch": "/nvme/aop-runtime/aop-sealed-1000/d163aaca5df93e16cad2bc14/scratch/f0d2c11a-b545-46c7-ab6b-d48f4542aa65"
+    },
+    "environment": {
+      "allowed_names": [
+        "HOME",
+        "LANG",
+        "LC_ALL",
+        "LC_CTYPE",
+        "PATH",
+        "PWD",
+        "SSL_CERT_DIR",
+        "SSL_CERT_FILE",
+        "TERM",
+        "TZ",
+        "http_proxy",
+        "https_proxy",
+        "no_proxy",
+        "AOP_CACHE_DIR",
+        "AOP_INPUT_DIR",
+        "AOP_INPUT_MANIFEST",
+        "AOP_OUTPUT_DIR",
+        "AOP_PROVIDER_STATE_DIR",
+        "AOP_SCRATCH_DIR",
+        "CODEX_HOME",
+        "GROK_HOME",
+        "HERMES_HOME",
+        "HERMES_REAL_HOME",
+        "XDG_CACHE_HOME",
+        "XDG_CONFIG_HOME",
+        "XDG_DATA_HOME",
+        "XDG_STATE_HOME",
+        "GROK_STORAGE_MODE",
+        "GOOGLE_GEMINI_BASE_URL"
+      ],
+      "ambient_values_inherited": false,
+      "credential_exposure": "provider-process-readable",
+      "credential_names": [
+        "ANTHROPIC_API_KEY",
+        "AWS_ACCESS_KEY_ID",
+        "AWS_SECRET_ACCESS_KEY",
+        "AWS_SESSION_TOKEN",
+        "AZURE_OPENAI_API_KEY",
+        "CURSOR_API_KEY",
+        "DEVIN_API_KEY",
+        "GEMINI_API_KEY",
+        "GOOGLE_API_KEY",
+        "NOUS_API_KEY",
+        "OPENAI_API_KEY",
+        "OPENCODE_API_KEY",
+        "XAI_API_KEY"
+      ],
+      "inherited_names": [
+        "GROK_STORAGE_MODE",
+        "LANG",
+        "PATH",
+        "TERM"
+      ],
+      "mode": "filtered",
+      "recorded_values": "redacted"
+    },
+    "host": {
+      "access": "runtime-only",
+      "runtime_paths": [
+        "/usr",
+        "/bin",
+        "/lib",
+        "/lib64",
+        "/etc runtime files"
+      ]
+    },
+    "identity": "opaque",
+    "inputs": {
+      "guest_root": "/inputs",
+      "mode": "snapshot",
+      "names": [],
+      "source_paths_visible": false
+    },
+    "instruction_sources": [],
+    "instructions": {
+      "aop_generated": "input-and-artifact-contract-when-needed",
+      "inherited_local": "none",
+      "provider_builtin": "present"
+    },
+    "model_capabilities": {
+      "effective": {
+        "extensions": "native",
+        "external_retrieval": "native",
+        "inference_network": "allowed",
+        "model_tools": "native",
+        "tool_network_egress": "native"
+      },
+      "enforcement": [],
+      "requested": {
+        "external_retrieval": "native"
+      }
+    },
+    "namespaces": [
+      "mount",
+      "pid",
+      "ipc",
+      "uts"
+    ],
+    "network": {
+      "isolation": "none",
+      "mode": "native",
+      "possible_context_channels": [
+        "local-network-services",
+        "provider-account-state"
+      ]
+    },
+    "profile": "sealed",
+    "prompt_transport": "stdin",
+    "provider_runtime": {
+      "executable": "/home/mihai/.local/share/claude/versions/2.1.293",
+      "guest_root": "/runtime/provider",
+      "sha256": "8968405e26db478af44eabc4635ab5ca557057b702a54460a59c13e1b253e978"
+    },
+    "repository": {
+      "access": "none",
+      "guest_path": null
+    },
+    "schema_version": 2,
+    "state": "resumable",
+    "working_directory": "/workspace",
+    "workspace": {
+      "access": "none",
+      "content": "neutral-empty",
+      "controller_path": "/nvme/aop-runtime/aop-sealed-1000/d163aaca5df93e16cad2bc14/sealed/f0d2c11a-b545-46c7-ab6b-d48f4542aa65/workspace",
+      "guest_path": "/workspace",
+      "host_path": null,
+      "writable": false
+    },
+    "writable_path_scopes": {
+      "/cache": "session-private",
+      "/output": "run-private",
+      "/scratch": "session-private",
+      "/state": "session-private",
+      "/tmp": "process-private"
+    },
+    "writable_paths": [
+      "/output",
+      "/scratch",
+      "/state",
+      "/cache",
+      "/tmp"
+    ]
+  },
+  "effort": null,
+  "inference_provider": null,
+  "inference_route": null,
+  "inputs": [],
+  "migration": null,
+  "mode": "agent",
+  "model": null,
+  "no_web": false,
+  "parent_run_id": null,
+  "profile": "sealed",
+  "prompt": "what would you like to dream about?",
+  "provider": "claude",
+  "provider_base_url": null,
+  "run_id": "f0d2c11a-b545-46c7-ab6b-d48f4542aa65",
+  "session_id": null,
+  "system_prompt": "",
+  "task": "2bcf6d26-099a-4a9c-a789-1eefc4452b02",
+  "timeout_seconds": 900.0,
+  "tools": null
+}

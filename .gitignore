@@ -1,0 +1,14 @@
+# Saved copies of other people's articles and papers; sources.tsv lists their URLs.
+/sources/
+/pdf/
+__pycache__/
+# Rendered frames, animations and compiled programs from the Mandelbrot run. The
+# animations are published at https://mihaicosma.com, and the sources here rebuild the rest.
+*.gif
+/runs-2026-10-07-thinking/free/workspace/deep/png/
+/runs-2026-10-07-thinking/free/workspace/deep/partial_png/
+/runs-2026-10-07-thinking/free/workspace/deep/ref.bin
+/runs-2026-10-07-thinking/free/workspace/deep/perturb
+/runs-2026-10-07-thinking/free/workspace/deep/bla
+/runs-2026-10-07-thinking/free/workspace/deep/chain
+/runs-2026-10-07-thinking/free/workspace/zoom/zoom

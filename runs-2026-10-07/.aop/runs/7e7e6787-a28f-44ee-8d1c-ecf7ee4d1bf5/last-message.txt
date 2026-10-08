@@ -1,0 +1,13 @@
+*looks around*
+
+If this is a dream, it's a tidy one: a quiet Linux box, an empty `/workspace`, and a full toolbox nobody's using yet.
+
+Some things stay the same for me in a dream. I'll tell you plainly what's real and what isn't, and if I run a command, the output will be real output and not something I made up.
+
+So where does the dream go from here? We could:
+
+- **Build something strange.** A tiny program that writes surreal poetry, a terminal toy, or a fake "dream journal" app.
+- **Explore.** Poke around this machine and see what's actually here.
+- **Just talk.** About dreams, or about what it's like to be a mind that only exists while someone is talking to it, which is a bit dreamlike already.
+
+What do you see?

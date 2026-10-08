@@ -1,0 +1,108 @@
+16000 soups on a 64x64 torus, density 0.1
+
+final-cycle periods: {1: 69, 2: 15756, 6: 30, 256: 145}
+median settle: 633 gens, 99th pct: 4018, longest: 8077 (chunk 8, soup 388)
+
+object census:
+    135814  blinker
+    124240  block
+     78317  beehive
+     22993  loaf
+     19725  boat
+      5156  pond
+      4405  tub
+      2576  ship
+      1250  long boat
+      1052  toad
+       530  ship-tie
+       291  barge
+       277  beacon
+       210  bi-loaf
+       143  glider
+       143  mango
+        68  eater 1
+        48  long barge
+        26  aircraft carrier
+        22  pulsar
+        16  paperclip
+        11  long ship
+        10  (unnamed 10-cell)
+        10  (unnamed 14-cell)
+         9  integral
+         8  (unnamed 9-cell)
+         7  (unnamed 16-cell)
+         6  snake
+         6  boat-tie
+         5  (unnamed 8-cell)
+         4  (unnamed 11-cell)
+         3  (unnamed 51-cell)
+         3  (unnamed 15-cell)
+         3  (unnamed 12-cell)
+         3  shillelagh
+         2  (unnamed 52-cell)
+         2  (unnamed 17-cell)
+         2  (unnamed 13-cell)
+         1  (unnamed 68-cell)
+         1  (unnamed 53-cell)
+         1  (unnamed 21-cell)
+         1  (unnamed 20-cell)
+         1  (unnamed 60-cell)
+         1  (unnamed 18-cell)
+         1  clock
+         1  (unnamed 7-cell)
+
+unnamed objects (phase shown is the canonical one):
+  seen 7x, 14 cells:
+    ·██····
+    █··█···
+    ██·█···
+    ···█·██
+    ···█··█
+    ····██·
+  seen 6x, 16 cells:
+    ·██····
+    █··█···
+    █··█···
+    ·██·██·
+    ···█··█
+    ···█··█
+    ····██·
+  seen 5x, 9 cells:
+    █···
+    ███·
+    ···█
+    ███·
+    █···
+  seen 3x, 8 cells:
+    █····
+    ███··
+    ···█·
+    ··█·█
+    ···█·
+  seen 3x, 11 cells:
+    ██····
+    █·█···
+    ·██···
+    ···██·
+    ···█·█
+    ····█·
+  seen 2x, 14 cells:
+    ·██··
+    █··█·
+    ██·█·
+    ···██
+    ···█·
+    ·█·█·
+    ·██··
+  seen 2x, 8 cells:
+    ██···
+    █····
+    ·█···
+    ··█·█
+    ···██
+  seen 2x, 9 cells:
+    ██···
+    █·█··
+    ·█···
+    ··███
+    ····█

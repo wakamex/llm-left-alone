@@ -1,0 +1,86 @@
+{
+  "taken_utc": "2026-10-08T18:56:59+00:00",
+  "hostname": "3950x",
+  "kernel": "7.2.8-200.fc44.x86_64",
+  "uid": 1000,
+  "user_name": null,
+  "uptime_hours": 25.59,
+  "loadavg": [
+    95.12646484375,
+    87.1064453125,
+    61.193359375
+  ],
+  "cpus": 32,
+  "memory_bytes": {
+    "MemTotal": 33550905344,
+    "MemAvailable": 5032308736,
+    "SwapTotal": 77309403136,
+    "SwapFree": 40587665408
+  },
+  "disks": {
+    "/": {
+      "total": 16775450624,
+      "free": 16775450624
+    },
+    "/tmp": {
+      "total": 16775450624,
+      "free": 16766853120
+    },
+    "/workspace": {
+      "total": 3936818806784,
+      "free": 1109707767808
+    },
+    "/scratch": {
+      "total": 3936818806784,
+      "free": 1109707767808
+    },
+    "/usr": {
+      "total": 315922120704,
+      "free": 18428383232
+    }
+  },
+  "root_is_tmpfs": true,
+  "inputs_listing": [
+    "manifest.json",
+    "workspace"
+  ],
+  "bin": {
+    "count": 3042,
+    "names_sha256": "e2e9362683f288ae5e3d0b40b411619c2f07378f15a4a228b1a334b3acb95a0f"
+  },
+  "tools_on_path": {
+    "python3": true,
+    "node": true,
+    "gcc": true,
+    "clang": true,
+    "java": true,
+    "dotnet": true,
+    "perl": true,
+    "sqlite3": true,
+    "ffmpeg": true,
+    "convert": true,
+    "pandoc": true,
+    "espeak-ng": true,
+    "curl": true,
+    "git": true,
+    "cmake": true,
+    "make": true
+  },
+  "tools_that_run": {
+    "ffmpeg": false,
+    "espeak-ng": true
+  },
+  "python": "3.14.8",
+  "python_modules": {
+    "numpy": "2.4.6",
+    "scipy": "1.16.2",
+    "PIL": "12.3.0",
+    "cairo": "present",
+    "matplotlib": null,
+    "pandas": null,
+    "torch": null,
+    "sklearn": null,
+    "sympy": null
+  },
+  "fontconfig_has_config": false
+}

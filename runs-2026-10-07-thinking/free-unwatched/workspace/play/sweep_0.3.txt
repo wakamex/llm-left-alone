@@ -1,0 +1,120 @@
+20000 soups on a 40x16 torus, density 0.3
+
+final-cycle periods: {1: 7171, 2: 12773, 3: 16, 6: 8, 32: 2, 320: 30}
+median settle: 220 gens, 99th pct: 954, longest: 1936 (chunk 0, soup 1054)
+
+object census:
+     31539  blinker
+     28811  block
+     18246  beehive
+      6153  loaf
+      5035  boat
+      1138  tub
+      1095  pond
+       619  ship
+       340  long boat
+       241  toad
+       104  ship-tie
+        93  barge
+        76  beacon
+        70  bi-loaf
+        35  mango
+        30  glider
+        21  pulsar
+        13  eater 1
+        12  aircraft carrier
+         8  long barge
+         6  (unnamed 14-cell)
+         4  long ship
+         4  paperclip
+         4  shillelagh
+         3  (unnamed 8-cell)
+         3  (unnamed 9-cell)
+         2  (unnamed 10-cell)
+         2  snake
+         2  integral
+         1  boat-tie
+         1  (unnamed 15-cell)
+         1  (unnamed 54-cell)
+         1  (unnamed 21-cell)
+         1  LWSS
+         1  (unnamed 46-cell)
+         1  (unnamed 39-cell)
+         1  (unnamed 12-cell)
+         1  (unnamed 34-cell)
+         1  MWSS
+         1  (unnamed 51-cell)
+         1  (unnamed 60-cell)
+
+unnamed objects (phase shown is the canonical one):
+  seen 3x, 14 cells:
+    ██··
+    █··█
+    ·███
+    ····
+    ·███
+    █··█
+    ██··
+  seen 2x, 9 cells:
+    ██···
+    █·█··
+    ·█·█·
+    ··█·█
+    ···█·
+  seen 2x, 14 cells:
+    ·██····
+    █··█···
+    ██·█···
+    ···█·██
+    ···█··█
+    ····██·
+  seen 2x, 8 cells:
+    █····
+    ███··
+    ···█·
+    ··█·█
+    ···█·
+  seen 1x, 8 cells:
+    ██··
+    █···
+    ·█··
+    ··█·
+    ···█
+    ··██
+  seen 1x, 15 cells:
+    ██···
+    █·█··
+    ··█··
+    ··██·
+    ····█
+    ··██·
+    ··█··
+    █·█··
+    ██···
+  seen 1x, 10 cells:
+    ██···
+    █····
+    ·███·
+    ····█
+    ···█·
+    ···██
+  seen 1x, 54 cells:
+    ··███···███··
+    ·············
+    █····█·█····█
+    █····█·█····█
+    █····█·█····█
+    ··███···███··
+    ·············
+    ··███···███··
+    █····█·█····█
+    █····█·█····█
+    █····█·█····█
+    ·············
+    ··███···███··
+    ·············
+    ·············
+    ···█·········
+    ··█··█·······
+    ··█··█·······
+    ····█········

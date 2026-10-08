@@ -1,0 +1,4 @@
+64x64 D=0.05 settle med     5 max  6953 | obj/soup   5.33 | obj per 1k cells  1.30 | gliders/soup 0.024 | other ships 0 | unsettled 0 | 16s
+64x64 D=0.1  settle med   633 max  8077 | obj/soup  24.84 | obj per 1k cells  6.06 | gliders/soup 0.009 | other ships 0 | unsettled 0 | 0s
+64x64 D=0.2  settle med  1000 max  9099 | obj/soup  27.20 | obj per 1k cells  6.64 | gliders/soup 0.005 | other ships 0 | unsettled 0 | 303s
+64x64 D=0.3  settle med  1008 max  9751 | obj/soup  27.32 | obj per 1k cells  6.67 | gliders/soup 0.004 | other ships 1 | unsettled 0 | 295s

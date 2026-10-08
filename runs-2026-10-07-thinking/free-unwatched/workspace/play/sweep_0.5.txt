@@ -1,0 +1,135 @@
+20000 soups on a 40x16 torus, density 0.5
+
+final-cycle periods: {1: 7064, 2: 12870, 3: 14, 6: 9, 32: 2, 320: 41}
+median settle: 217 gens, 99th pct: 958, longest: 2172 (chunk 9, soup 204)
+
+object census:
+     31629  blinker
+     28832  block
+     18454  beehive
+      5882  loaf
+      5114  boat
+      1191  tub
+      1096  pond
+       620  ship
+       332  long boat
+       221  toad
+       132  ship-tie
+        85  barge
+        75  beacon
+        75  bi-loaf
+        36  glider
+        34  mango
+        19  eater 1
+        17  pulsar
+        12  long barge
+         8  (unnamed 10-cell)
+         7  (unnamed 14-cell)
+         4  paperclip
+         4  long ship
+         4  aircraft carrier
+         3  (unnamed 9-cell)
+         3  integral
+         3  shillelagh
+         2  (unnamed 15-cell)
+         2  (unnamed 16-cell)
+         1  snake
+         1  (unnamed 54-cell)
+         1  LWSS
+         1  MWSS
+         1  boat-tie
+         1  (unnamed 42-cell)
+         1  (unnamed 68-cell)
+         1  (unnamed 96-cell)
+         1  (unnamed 50-cell)
+         1  (unnamed 52-cell)
+
+unnamed objects (phase shown is the canonical one):
+  seen 4x, 14 cells:
+    ·██····
+    █··█···
+    ██·█···
+    ···█·██
+    ···█··█
+    ····██·
+  seen 2x, 16 cells:
+    ·██····
+    █··█···
+    █··█···
+    ·██·██·
+    ···█··█
+    ···█··█
+    ····██·
+  seen 2x, 9 cells:
+    ██···
+    █·█··
+    ·█···
+    ··███
+    ····█
+  seen 1x, 9 cells:
+    █···
+    ███·
+    ···█
+    ███·
+    █···
+  seen 1x, 10 cells:
+    █··
+    █·█
+    ██·
+    ···
+    ···
+    ···
+    ···
+    ···
+    ···
+    ···
+    ···
+    ···
+    ···
+    ···
+    ···
+    ···
+    ···
+    ···
+    ···
+    ···
+    ···
+    ···
+    ·█·
+    █··
+    ███
+  seen 1x, 15 cells:
+    ██···
+    █·█··
+    ··█··
+    ··██·
+    ····█
+    ··██·
+    ··█··
+    █·█··
+    ██···
+  seen 1x, 54 cells:
+    █····█·█····█···
+    █····█·█····█···
+    ················
+    ··███···███·····
+    ··············█·
+    ·············█·█
+    ·············█·█
+    ··███···███···█·
+    ················
+    █····█·█····█···
+    █····█·█····█···
+    █····█·█····█···
+    ··███···███·····
+    ················
+    ··███···███·····
+    █····█·█····█···
+  seen 1x, 10 cells:
+    ██····
+    ██····
+    ······
+    ···██·
+    ···█··
+    ·····█
+    ····██
