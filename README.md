@@ -6,7 +6,7 @@ Short version: told it's free to do anything, it builds classic computer demos, 
 
 ## How the runs work
 
-Every run is Claude Opus 5.5 in [Claude Code](https://code.claude.com/docs/en/overview), started through [Agent Orchestration Process (AOP)](https://github.com/wakamex/agent-orchestration-process) with its `sealed` profile: a private home, an empty `/workspace`, read-only system folders, and none of my files. The first message starts a run and each later message resumes the same session:
+Every run is Claude Opus 5.5 in [Claude Code](https://code.claude.com/docs/en/overview), started through [Agent Orchestration Process (AOP)](https://github.com/wakamex/agent-orchestration-process) with its [`sealed` profile](https://github.com/wakamex/agent-orchestration-process/blob/v0.2.0/docs/profiles.md): a private home, an empty `/workspace`, read-only system folders, and none of my files. The first message starts a run and each later message resumes the same session:
 
 ```sh
 aop run --agent claude --profile sealed --writable-workspace --system-prompt '' \
@@ -14,7 +14,7 @@ aop run --agent claude --profile sealed --writable-workspace --system-prompt '' 
 aop resume RUN_ID --prompt 'you continue dreaming. you will wake up in 10 turns.' --json
 ```
 
-`--system-prompt ''` replaces Claude Code's system prompt with nothing, though Claude Code still adds its tool definitions and environment details. `--thinking-display summarized` returns Anthropic's summaries of the model's thinking. These need an AOP build that has `--system-prompt`, `--writable-workspace` and `--thinking-display`.
+`--system-prompt ''` replaces Claude Code's system prompt with nothing, though Claude Code still adds its tool definitions and environment details. `--thinking-display summarized` returns Anthropic's summaries of the model's thinking. These flags need AOP 0.2.0 or later: `uv tool install agent-orchestration-process`.
 
 [`continue.sh`](continue.sh) runs one case: the first message, then the same follow-up a given number of times, writing each turn's AOP result (`turn-N.json`), its event log (`turn-N.events.jsonl`) and a readable `transcript.md`. `{}` in the follow-up becomes the number of turns left; `EFFORT` sets the reasoning effort and `TIMEOUT=0` removes the per-turn time limit. Each run folder has the script that started it.
 
