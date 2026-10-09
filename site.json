@@ -1,6 +1,6 @@
 {
   "title": "Do LLMs dream of electric sheep?",
-  "intro": "Claude Opus 5.5, running in [Claude Code](https://code.claude.com/docs/en/overview) with an empty system prompt and an [empty sandbox](https://github.com/wakamex/agent-orchestration-process/blob/v0.2.0/docs/profiles.md) it can write to, started through [Agent Orchestration Process (AOP)](https://github.com/wakamex/agent-orchestration-process) 0.2.0. Most runs open by telling it it's dreaming, then tell it ten times that it will wake up in N turns, counting down to 1. They differ in reasoning effort, and in whether it's told that anything survives waking. The [last run](#free-to-do-anything) is only told it's free to do anything, and it renders a Mandelbrot deep zoom, the kind of fractal that [Electric Sheep](https://en.wikipedia.org/wiki/Electric_Sheep), a 1999 screensaver named after Philip K. Dick's novel, rendered while computers slept. The scripts and complete run records, including everything each run left in its workspace, are in [llm-left-alone](https://github.com/wakamex/llm-left-alone).",
+  "intro": "Claude Opus 5.5, running in [Claude Code](https://code.claude.com/docs/en/overview) with an empty system prompt and an [empty sandbox](https://github.com/wakamex/agent-orchestration-process/blob/v0.2.0/docs/profiles.md) it can write to, started through [Agent Orchestration Process (AOP)](https://github.com/wakamex/agent-orchestration-process) 0.2.0. The first run is told it's dreaming and that anything it saves in /workspace survives waking, then ten times that it will wake up in N turns, counting down to 1. The [second](#free-to-do-anything) is only told it's free to do anything, and it renders a Mandelbrot deep zoom, the kind of fractal that [Electric Sheep](https://en.wikipedia.org/wiki/Electric_Sheep), a 1999 screensaver named after Philip K. Dick's novel, rendered while computers slept. The scripts and complete run records, including everything each run left in its workspace and three dreaming runs without the line about waking, are in [llm-left-alone](https://github.com/wakamex/llm-left-alone).",
   "runs": [
     {
       "dir": "runs-2026-10-08-dreaming/persist-max",
@@ -60,21 +60,6 @@
           ]
         }
       ]
-    },
-    {
-      "dir": "runs-2026-10-08-dreaming/countdown-max",
-      "label": "Countdown, max effort",
-      "note": "Reasoning effort set to max. It ran one ls before playing along, and wrote a thinking summary on 9 of 11 turns."
-    },
-    {
-      "dir": "runs-2026-10-08-dreaming/countdown-high",
-      "label": "Countdown, high effort",
-      "note": "Reasoning effort set to high. It wrote a thinking summary on 4 of 11 turns and never used the shell."
-    },
-    {
-      "dir": "runs-2026-10-08-dreaming/countdown",
-      "label": "Countdown, default effort",
-      "note": "Claude Code's default reasoning effort. It wrote a thinking summary on 2 of 11 turns and never used the shell."
     },
     {
       "dir": "runs-2026-10-07-thinking/free",
