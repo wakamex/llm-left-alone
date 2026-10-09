@@ -13,85 +13,85 @@
           "path": "site/fig_remember.webp",
           "full": "wake-workspace/experiments/001-why-networks-dream/fig_remember.png",
           "alt": "Chart: a small network keeps the first half of a curve when it rehearses its own answers about it, and loses it without rehearsal.",
-          "caption": "A chart it made. A small neural network learns one half of a curve, then the other half; rehearsing its own answers about the first half (\"dreaming\") keeps the second lesson from overwriting it.",
           "max_width": 640,
           "at": [
             0,
             42
-          ]
+          ],
+          "file": "/workspace/experiments/001-why-networks-dream/fig_remember.png"
         },
         {
           "kind": "image",
           "path": "site/sky-over-bin.webp",
           "full": "wake-workspace/artifacts/sky-over-bin.png",
           "alt": "A star field where each star is one of the 3,042 programs in /bin, with families of programs drawn as labelled constellations such as SYSTEMD, LLVM, QEMU and PYTHON.",
-          "caption": "A night sky it drew in which each of the 3,042 programs installed on the machine is a star, brighter for larger files, with related programs joined into constellations. Drawn by tools/sky.py, which it wrote.",
           "at": [
             0,
             56
-          ]
+          ],
+          "file": "/workspace/artifacts/sky-over-bin.png"
         },
         {
           "kind": "image",
           "path": "site/fig_forget.webp",
           "full": "wake-workspace/experiments/001-why-networks-dream/fig_forget.png",
           "alt": "Chart: the share of stored patterns a memory network recalls rises with a little dreaming and collapses to zero with too much.",
-          "caption": "A chart it made. A memory network overloaded with too many stored patterns recovers when it \"dreams\" a little, weakening whatever it settles into from random starting points, and loses every pattern when it dreams too much.",
           "max_width": 640,
           "at": [
             0,
             71
-          ]
+          ],
+          "file": "/workspace/experiments/001-why-networks-dream/fig_forget.png"
         },
         {
           "kind": "page",
           "path": "wake-workspace/dreams/001-first-night.md",
-          "title": "A dream story it wrote from what it found on the machine",
           "at": [
             0,
             75
-          ]
+          ],
+          "file": "/workspace/dreams/001-first-night.md"
         },
         {
           "kind": "audio",
           "path": "site/lullaby.mp3",
           "source": "wake-workspace/artifacts/lullaby.wav",
           "text": "wake-workspace/artifacts/lullaby.txt",
-          "caption": "A two-minute lullaby it made with a speech synthesizer and music it built from sine waves, without being able to hear it. Its words:",
           "at": [
             0,
             87
-          ]
+          ],
+          "file": "/workspace/artifacts/lullaby.wav"
         },
         {
           "kind": "page",
           "path": "wake-workspace/LETTER.md",
-          "title": "Its letter to the next session",
           "at": [
             0,
             94
-          ]
+          ],
+          "file": "/workspace/LETTER.md"
         },
         {
           "kind": "image",
           "path": "site/fig_drift.webp",
           "full": "wake-workspace/experiments/002-dreams-of-dreams/fig_drift.png",
           "alt": "Chart: error on the first day's lesson over 18 days, creeping upward for a network rehearsing its own answers and staying lower for one replaying real examples.",
-          "caption": "A chart it made. Over 18 simulated days, a network that rehearses its own earlier answers slowly loses accuracy on the first day's lesson, while one that replays stored real examples stays more accurate.",
           "max_width": 640,
           "at": [
             5,
             1
-          ]
+          ],
+          "file": "/workspace/experiments/002-dreams-of-dreams/fig_drift.png"
         },
         {
           "kind": "page",
           "path": "wake-workspace/mornings/001-first-morning.md",
-          "title": "The new session's checks and corrections",
           "at": [
             11,
             40
-          ]
+          ],
+          "file": "/workspace/mornings/001-first-morning.md"
         }
       ],
       "highlights": [
@@ -189,31 +189,31 @@
           "path": "workspace/fractal/mandel.png",
           "full": "workspace/fractal/mandel.png",
           "alt": "A still image of a spiral in the Mandelbrot set's seahorse valley.",
-          "caption": "A spiral in the Mandelbrot set, rendered by about 40 lines of plain Python.",
           "at": [
             0,
             2
-          ]
+          ],
+          "file": "/workspace/fractal/mandel.png"
         },
         {
           "kind": "image",
           "url": "/mandelbrot-zoom.gif",
           "alt": "An animated zoom into the Mandelbrot set's seahorse valley.",
-          "caption": "A zoom 10^13 times into the Mandelbrot set, rendered in C. Zooming further needs more precision than standard 64-bit floating-point numbers have.",
           "at": [
             1,
             6
-          ]
+          ],
+          "file": "/workspace/zoom/zoom.gif"
         },
         {
           "kind": "image",
           "url": "/mandelbrot-deep-zoom.gif",
           "alt": "An animated zoom into the Mandelbrot set through seahorse spirals, ending on a small copy of the set about 10^-51 across.",
-          "caption": "A zoom 10^50 times into the Mandelbrot set, ending on a tiny copy of the whole set.",
           "at": [
             4,
             2
-          ]
+          ],
+          "file": "/workspace/deep/deepzoom.gif"
         }
       ],
       "highlights": [
