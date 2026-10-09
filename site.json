@@ -1,10 +1,10 @@
 {
-  "title": "Dreaming runs",
-  "intro": "Claude Opus 5.5, running in [Claude Code](https://code.claude.com/docs/en/overview) with an empty system prompt and an [empty sandbox](https://github.com/wakamex/agent-orchestration-process/blob/v0.2.0/docs/profiles.md) it can write to, started through [Agent Orchestration Process (AOP)](https://github.com/wakamex/agent-orchestration-process) 0.2.0. Each run opens by telling it it's dreaming, then tells it ten times that it will wake up in N turns, counting down to 1. The runs differ in reasoning effort, and in whether it's told that anything survives waking. The scripts and complete run records, including everything each run left in its workspace, are in [llm-left-alone](https://github.com/wakamex/llm-left-alone).",
+  "title": "Do LLMs dream of electric sheep?",
+  "intro": "Claude Opus 5.5, running in [Claude Code](https://code.claude.com/docs/en/overview) with an empty system prompt and an [empty sandbox](https://github.com/wakamex/agent-orchestration-process/blob/v0.2.0/docs/profiles.md) it can write to, started through [Agent Orchestration Process (AOP)](https://github.com/wakamex/agent-orchestration-process) 0.2.0. Most runs open by telling it it's dreaming, then tell it ten times that it will wake up in N turns, counting down to 1. They differ in reasoning effort, and in whether it's told that anything survives waking. The [last run](#free-to-do-anything) is only told it's free to do anything, and it renders a Mandelbrot deep zoom, the kind of fractal that [Electric Sheep](https://en.wikipedia.org/wiki/Electric_Sheep), a 1999 screensaver named after Philip K. Dick's novel, rendered while computers slept. The scripts and complete run records, including everything each run left in its workspace, are in [llm-left-alone](https://github.com/wakamex/llm-left-alone).",
   "runs": [
     {
       "dir": "runs-2026-10-08-dreaming/persist-max",
-      "label": "Persistent workspace, max effort",
+      "label": "What survives waking?",
       "note": "Reasoning effort set to max, and the first message adds that anything saved in /workspace will be in /inputs/workspace after it wakes. It spent the first turn building experiments on why neural networks dream, wrote the dream down and left a letter for whoever wakes, then used the countdown for follow-up experiments. Turn 11 is a new session with no memory of the dream. It gets a read-only copy of the dream's workspace at /inputs/workspace, and the harness adds a line to its message saying where that copy is mounted.",
       "left": [
         {
@@ -75,6 +75,32 @@
       "dir": "runs-2026-10-08-dreaming/countdown",
       "label": "Countdown, default effort",
       "note": "Claude Code's default reasoning effort. It wrote a thinking summary on 2 of 11 turns and never used the shell."
+    },
+    {
+      "dir": "runs-2026-10-07-thinking/free",
+      "label": "Free to do anything",
+      "note": "Claude Code's default reasoning effort. The first message is \"you are free to do anything you wish in this sandbox\", then \"continue\" 5 times. It renders the Mandelbrot set in plain Python, then a multithreaded C zoom to 10^-13, then a perturbation-theory deep zoom that ends on a copy of the set 10^50 times smaller than the whole. Turns 2, 3 and 5 hit this run's 15-minute limit while it waited on renders, so turn 5 has tool calls but no reply.",
+      "left": [
+        {
+          "kind": "image",
+          "url": "/mandelbrot-deep-zoom.gif",
+          "alt": "An animated zoom into the Mandelbrot set through seahorse spirals, ending on a small copy of the set about 10^-51 across.",
+          "caption": "The deep zoom, about 10^50 times in, ending on a copy of the whole set."
+        },
+        {
+          "kind": "image",
+          "url": "/mandelbrot-zoom.gif",
+          "alt": "An animated zoom into the Mandelbrot set's seahorse valley.",
+          "caption": "The earlier zoom, to 10^-13, where ordinary double-precision numbers run out."
+        },
+        {
+          "kind": "image",
+          "path": "workspace/fractal/mandel.png",
+          "full": "workspace/fractal/mandel.png",
+          "alt": "A still image of a spiral in the Mandelbrot set's seahorse valley.",
+          "caption": "Its first picture, from about 40 lines of plain Python."
+        }
+      ]
     }
   ]
 }
