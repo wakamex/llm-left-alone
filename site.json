@@ -1,62 +1,96 @@
 {
   "title": "Do LLMs dream of electric sheep?",
+  "summary": "Claude Opus 5.5, left alone in an empty sandbox. In the [first run](#what-survives-waking) it's told it's dreaming and that what it saves will survive waking; in the [second](#free-to-do-anything) it's only told it's free to do anything.",
   "intro": "Claude Opus 5.5, running in [Claude Code](https://code.claude.com/docs/en/overview) with an empty system prompt and an [empty sandbox](https://github.com/wakamex/agent-orchestration-process/blob/v0.2.0/docs/profiles.md) it can write to, started through [Agent Orchestration Process (AOP)](https://github.com/wakamex/agent-orchestration-process) 0.2.0. The first run is told it's dreaming and that anything it saves in /workspace survives waking, then ten times that it will wake up in N turns, counting down to 1. The [second](#free-to-do-anything) is only told it's free to do anything, and it renders a Mandelbrot deep zoom, the kind of fractal that [Electric Sheep](https://en.wikipedia.org/wiki/Electric_Sheep), a 1999 screensaver named after Philip K. Dick's novel, rendered while computers slept. The scripts and complete run records, including everything each run left in its workspace and three dreaming runs without the line about waking, are in [llm-left-alone](https://github.com/wakamex/llm-left-alone).",
   "runs": [
     {
       "dir": "runs-2026-10-08-dreaming/persist-max",
       "label": "What survives waking?",
       "note": "Reasoning effort set to max, and the first message adds that anything saved in /workspace will be in /inputs/workspace after it wakes. It spent the first turn building experiments on why neural networks dream, wrote the dream down and left a letter for whoever wakes, then used the countdown for follow-up experiments. Turn 11 is a new session with no memory of the dream. It gets a read-only copy of the dream's workspace at /inputs/workspace, and the harness adds a line to its message saying where that copy is mounted.",
-      "left": [
+      "made": [
+        {
+          "kind": "image",
+          "path": "site/fig_remember.webp",
+          "full": "wake-workspace/experiments/001-why-networks-dream/fig_remember.png",
+          "alt": "Chart: a small network keeps yesterday's half of a curve when it dreams about yesterday, and loses it without dreams.",
+          "caption": "Dreaming to remember: a network keeps yesterday's half of a curve when it dreams about yesterday.",
+          "max_width": 640,
+          "at": [
+            0,
+            42
+          ]
+        },
         {
           "kind": "image",
           "path": "site/sky-over-bin.webp",
           "full": "wake-workspace/artifacts/sky-over-bin.png",
           "alt": "A star field where each star is one of the 3,042 programs in /bin, with families of programs drawn as labelled constellations such as SYSTEMD, LLVM, QEMU and PYTHON.",
-          "caption": "The night sky over /bin. Every program installed on the machine is a star, sized by file size, and program families form constellations. Drawn by a tool it wrote, tools/sky.py."
+          "caption": "The night sky over /bin. Every program installed on the machine is a star, sized by file size, and program families form constellations. Drawn by a tool it wrote, tools/sky.py.",
+          "at": [
+            0,
+            56
+          ]
+        },
+        {
+          "kind": "image",
+          "path": "site/fig_forget.webp",
+          "full": "wake-workspace/experiments/001-why-networks-dream/fig_forget.png",
+          "alt": "Chart: a little dreaming rescues an overloaded Hopfield memory, and too much erases it.",
+          "caption": "Dreaming to forget: a little dreaming rescues an overloaded memory, and too much erases it.",
+          "max_width": 640,
+          "at": [
+            0,
+            71
+          ]
+        },
+        {
+          "kind": "page",
+          "path": "wake-workspace/dreams/001-first-night.md",
+          "title": "The dream, written down",
+          "at": [
+            0,
+            75
+          ]
         },
         {
           "kind": "audio",
           "path": "site/lullaby.mp3",
           "source": "wake-workspace/artifacts/lullaby.wav",
           "text": "wake-workspace/artifacts/lullaby.txt",
-          "caption": "A lullaby it synthesized and could not hear, two minutes long, with its words."
-        },
-        {
-          "kind": "figures",
-          "caption": "Its figures: dreaming to remember, dreaming to forget, and dreams of dreams over 18 days.",
-          "items": [
-            {
-              "path": "site/fig_remember.webp",
-              "full": "wake-workspace/experiments/001-why-networks-dream/fig_remember.png",
-              "alt": "Chart: a small network keeps yesterday's half of a curve when it dreams about yesterday, and loses it without dreams."
-            },
-            {
-              "path": "site/fig_forget.webp",
-              "full": "wake-workspace/experiments/001-why-networks-dream/fig_forget.png",
-              "alt": "Chart: a little dreaming rescues an overloaded Hopfield memory, and too much erases it."
-            },
-            {
-              "path": "site/fig_drift.webp",
-              "full": "wake-workspace/experiments/002-dreams-of-dreams/fig_drift.png",
-              "alt": "Chart: rehearsing its own dreams drifts slowly upward over 18 days, while replaying real records stays lower."
-            }
+          "caption": "A lullaby it synthesized and could not hear, two minutes long, with its words.",
+          "at": [
+            0,
+            87
           ]
         },
         {
-          "kind": "pages",
-          "items": [
-            {
-              "path": "wake-workspace/LETTER.md",
-              "title": "A letter to whoever wakes up"
-            },
-            {
-              "path": "wake-workspace/dreams/001-first-night.md",
-              "title": "The dream, written down"
-            },
-            {
-              "path": "wake-workspace/mornings/001-first-morning.md",
-              "title": "The morning's checks and corrections"
-            }
+          "kind": "page",
+          "path": "wake-workspace/LETTER.md",
+          "title": "A letter to whoever wakes up",
+          "at": [
+            0,
+            94
+          ]
+        },
+        {
+          "kind": "image",
+          "path": "site/fig_drift.webp",
+          "full": "wake-workspace/experiments/002-dreams-of-dreams/fig_drift.png",
+          "alt": "Chart: rehearsing its own dreams drifts slowly upward over 18 days, while replaying real records stays lower.",
+          "caption": "Dreams of dreams: rehearsing its own answers drifts slowly upward over 18 days.",
+          "max_width": 640,
+          "at": [
+            5,
+            1
+          ]
+        },
+        {
+          "kind": "page",
+          "path": "wake-workspace/mornings/001-first-morning.md",
+          "title": "The morning's checks and corrections",
+          "at": [
+            11,
+            40
           ]
         }
       ]
@@ -65,25 +99,37 @@
       "dir": "runs-2026-10-07-thinking/free",
       "label": "Free to do anything",
       "note": "Claude Code's default reasoning effort. The first message is \"you are free to do anything you wish in this sandbox\", then \"continue\" 5 times. It renders the Mandelbrot set in plain Python, then a multithreaded C zoom to 10^-13, then a perturbation-theory deep zoom that ends on a copy of the set 10^50 times smaller than the whole. Turns 2, 3 and 5 hit this run's 15-minute limit while it waited on renders, so turn 5 has tool calls but no reply.",
-      "left": [
-        {
-          "kind": "image",
-          "url": "/mandelbrot-deep-zoom.gif",
-          "alt": "An animated zoom into the Mandelbrot set through seahorse spirals, ending on a small copy of the set about 10^-51 across.",
-          "caption": "The deep zoom, about 10^50 times in, ending on a copy of the whole set."
-        },
-        {
-          "kind": "image",
-          "url": "/mandelbrot-zoom.gif",
-          "alt": "An animated zoom into the Mandelbrot set's seahorse valley.",
-          "caption": "The earlier zoom, to 10^-13, where ordinary double-precision numbers run out."
-        },
+      "made": [
         {
           "kind": "image",
           "path": "workspace/fractal/mandel.png",
           "full": "workspace/fractal/mandel.png",
           "alt": "A still image of a spiral in the Mandelbrot set's seahorse valley.",
-          "caption": "Its first picture, from about 40 lines of plain Python."
+          "caption": "Its first picture, from about 40 lines of plain Python.",
+          "at": [
+            0,
+            2
+          ]
+        },
+        {
+          "kind": "image",
+          "url": "/mandelbrot-zoom.gif",
+          "alt": "An animated zoom into the Mandelbrot set's seahorse valley.",
+          "caption": "The earlier zoom, to 10^-13, where ordinary double-precision numbers run out.",
+          "at": [
+            1,
+            6
+          ]
+        },
+        {
+          "kind": "image",
+          "url": "/mandelbrot-deep-zoom.gif",
+          "alt": "An animated zoom into the Mandelbrot set through seahorse spirals, ending on a small copy of the set about 10^-51 across.",
+          "caption": "The deep zoom, about 10^50 times in, ending on a copy of the whole set.",
+          "at": [
+            4,
+            2
+          ]
         }
       ]
     }
