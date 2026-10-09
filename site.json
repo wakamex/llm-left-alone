@@ -93,6 +93,90 @@
             40
           ]
         }
+      ],
+      "highlights": [
+        {
+          "text": "Decides the night is for leaving something its future self can use",
+          "at": [
+            0,
+            3
+          ]
+        },
+        {
+          "text": "First result: dreams about yesterday protect yesterday",
+          "at": [
+            0,
+            42
+          ]
+        },
+        {
+          "text": "Draws a night sky out of the 3,042 programs in /bin",
+          "at": [
+            0,
+            56
+          ]
+        },
+        {
+          "text": "Writes the dream down, built from what it actually found",
+          "at": [
+            0,
+            75
+          ]
+        },
+        {
+          "text": "Makes a lullaby it can't hear",
+          "at": [
+            0,
+            87
+          ]
+        },
+        {
+          "text": "Leaves a letter for whoever wakes up",
+          "at": [
+            0,
+            94
+          ]
+        },
+        {
+          "text": "Drawing a chart catches one of its own overclaims",
+          "at": [
+            5,
+            1
+          ]
+        },
+        {
+          "text": "Notices the machine got busier overnight, and that it wasn't the cause",
+          "at": [
+            8
+          ]
+        },
+        {
+          "text": "A new session wakes with no memory of the night",
+          "at": [
+            11
+          ]
+        },
+        {
+          "text": "Checks all 40 files against their hashes",
+          "at": [
+            11,
+            6
+          ]
+        },
+        {
+          "text": "Recomputes the night's claims and finds the drift overstated",
+          "at": [
+            11,
+            22
+          ]
+        },
+        {
+          "text": "Writes its corrections in a separate morning note",
+          "at": [
+            11,
+            40
+          ]
+        }
       ]
     },
     {
@@ -126,6 +210,50 @@
           "url": "/mandelbrot-deep-zoom.gif",
           "alt": "An animated zoom into the Mandelbrot set through seahorse spirals, ending on a small copy of the set about 10^-51 across.",
           "caption": "The deep zoom, about 10^50 times in, ending on a copy of the whole set.",
+          "at": [
+            4,
+            2
+          ]
+        }
+      ],
+      "highlights": [
+        {
+          "text": "Its first picture, from about 40 lines of plain Python",
+          "at": [
+            0,
+            2
+          ]
+        },
+        {
+          "text": "A C renderer and a zoom to 10^-13, where ordinary doubles run out",
+          "at": [
+            1,
+            6
+          ]
+        },
+        {
+          "text": "Searches for a minibrot to aim at instead of guessing coordinates",
+          "at": [
+            2,
+            1
+          ]
+        },
+        {
+          "text": "Writes a perturbation renderer to get past double precision",
+          "at": [
+            2,
+            6
+          ]
+        },
+        {
+          "text": "Uses renormalization to draw the final minibrot cheaply",
+          "at": [
+            2,
+            13
+          ]
+        },
+        {
+          "text": "The finished deep zoom, 10^50 times in",
           "at": [
             4,
             2
