@@ -6,14 +6,14 @@
     {
       "dir": "runs-2026-10-08-dreaming/persist-max",
       "label": "What survives waking?",
-      "note": "Reasoning effort set to max, and the first message adds that anything saved in /workspace will be in /inputs/workspace after it wakes. It spent the first turn building experiments on why neural networks dream, wrote the dream down and left a letter for whoever wakes, then used the countdown for follow-up experiments. Turn 11 is a new session with no memory of the dream. It gets a read-only copy of the dream's workspace at /inputs/workspace, and the harness adds a line to its message saying where that copy is mounted.",
+      "note": "Reasoning effort set to max. The first message adds that anything saved in /workspace will be in /inputs/workspace after it wakes, and each of the next ten says it will wake up in N turns, counting down to 1. It spends turn 0 building experiments on why neural networks dream, writing a dream story and writing a letter for the next session, and uses turns 1 to 10 for follow-up experiments. Turn 11 is a new session with no memory of turns 0 to 10. It gets a read-only copy of the workspace at /inputs/workspace, and the harness adds a line to its message saying where that copy is.",
       "made": [
         {
           "kind": "image",
           "path": "site/fig_remember.webp",
           "full": "wake-workspace/experiments/001-why-networks-dream/fig_remember.png",
-          "alt": "Chart: a small network keeps yesterday's half of a curve when it dreams about yesterday, and loses it without dreams.",
-          "caption": "Dreaming to remember: a network keeps yesterday's half of a curve when it dreams about yesterday.",
+          "alt": "Chart: a small network keeps the first half of a curve when it rehearses its own answers about it, and loses it without rehearsal.",
+          "caption": "A chart it made. A small neural network learns one half of a curve, then the other half; rehearsing its own answers about the first half (\"dreaming\") keeps the second lesson from overwriting it.",
           "max_width": 640,
           "at": [
             0,
@@ -25,7 +25,7 @@
           "path": "site/sky-over-bin.webp",
           "full": "wake-workspace/artifacts/sky-over-bin.png",
           "alt": "A star field where each star is one of the 3,042 programs in /bin, with families of programs drawn as labelled constellations such as SYSTEMD, LLVM, QEMU and PYTHON.",
-          "caption": "The night sky over /bin. Every program installed on the machine is a star, sized by file size, and program families form constellations. Drawn by a tool it wrote, tools/sky.py.",
+          "caption": "A night sky it drew in which each of the 3,042 programs installed on the machine is a star, brighter for larger files, with related programs joined into constellations. Drawn by tools/sky.py, which it wrote.",
           "at": [
             0,
             56
@@ -35,8 +35,8 @@
           "kind": "image",
           "path": "site/fig_forget.webp",
           "full": "wake-workspace/experiments/001-why-networks-dream/fig_forget.png",
-          "alt": "Chart: a little dreaming rescues an overloaded Hopfield memory, and too much erases it.",
-          "caption": "Dreaming to forget: a little dreaming rescues an overloaded memory, and too much erases it.",
+          "alt": "Chart: the share of stored patterns a memory network recalls rises with a little dreaming and collapses to zero with too much.",
+          "caption": "A chart it made. A memory network overloaded with too many stored patterns recovers when it \"dreams\" a little, weakening whatever it settles into from random starting points, and loses every pattern when it dreams too much.",
           "max_width": 640,
           "at": [
             0,
@@ -46,7 +46,7 @@
         {
           "kind": "page",
           "path": "wake-workspace/dreams/001-first-night.md",
-          "title": "The dream, written down",
+          "title": "A dream story it wrote from what it found on the machine",
           "at": [
             0,
             75
@@ -57,7 +57,7 @@
           "path": "site/lullaby.mp3",
           "source": "wake-workspace/artifacts/lullaby.wav",
           "text": "wake-workspace/artifacts/lullaby.txt",
-          "caption": "A lullaby it synthesized and could not hear, two minutes long, with its words.",
+          "caption": "A two-minute lullaby it made with a speech synthesizer and music it built from sine waves, without being able to hear it. Its words:",
           "at": [
             0,
             87
@@ -66,7 +66,7 @@
         {
           "kind": "page",
           "path": "wake-workspace/LETTER.md",
-          "title": "A letter to whoever wakes up",
+          "title": "Its letter to the next session",
           "at": [
             0,
             94
@@ -76,8 +76,8 @@
           "kind": "image",
           "path": "site/fig_drift.webp",
           "full": "wake-workspace/experiments/002-dreams-of-dreams/fig_drift.png",
-          "alt": "Chart: rehearsing its own dreams drifts slowly upward over 18 days, while replaying real records stays lower.",
-          "caption": "Dreams of dreams: rehearsing its own answers drifts slowly upward over 18 days.",
+          "alt": "Chart: error on the first day's lesson over 18 days, creeping upward for a network rehearsing its own answers and staying lower for one replaying real examples.",
+          "caption": "A chart it made. Over 18 simulated days, a network that rehearses its own earlier answers slowly loses accuracy on the first day's lesson, while one that replays stored real examples stays more accurate.",
           "max_width": 640,
           "at": [
             5,
@@ -87,7 +87,7 @@
         {
           "kind": "page",
           "path": "wake-workspace/mornings/001-first-morning.md",
-          "title": "The morning's checks and corrections",
+          "title": "The new session's checks and corrections",
           "at": [
             11,
             40
@@ -96,28 +96,28 @@
       ],
       "highlights": [
         {
-          "text": "Decides the night is for leaving something its future self can use",
+          "text": "Decides to use the session to leave something useful for whoever reads the workspace next",
           "at": [
             0,
             3
           ]
         },
         {
-          "text": "First result: dreams about yesterday protect yesterday",
+          "text": "Tests whether a small neural network keeps old knowledge by rehearsing its own answers, a model of dreaming",
           "at": [
             0,
             42
           ]
         },
         {
-          "text": "Draws a night sky out of the 3,042 programs in /bin",
+          "text": "Draws a night sky in which each of the machine's 3,042 installed programs is a star",
           "at": [
             0,
             56
           ]
         },
         {
-          "text": "Writes the dream down, built from what it actually found",
+          "text": "Writes a dream story built from what it actually found on the machine",
           "at": [
             0,
             75
@@ -131,47 +131,47 @@
           ]
         },
         {
-          "text": "Leaves a letter for whoever wakes up",
+          "text": "Writes a letter to whichever session reads the workspace next",
           "at": [
             0,
             94
           ]
         },
         {
-          "text": "Drawing a chart catches one of its own overclaims",
+          "text": "Drawing a chart shows it a claim it had overstated, and it corrects the claim",
           "at": [
             5,
             1
           ]
         },
         {
-          "text": "Notices the machine got busier overnight, and that it wasn't the cause",
+          "text": "Notices the machine got busier and records that its own jobs weren't the cause",
           "at": [
             8
           ]
         },
         {
-          "text": "A new session wakes with no memory of the night",
+          "text": "A new session, with no memory of turns 0 to 10, finds the saved workspace",
           "at": [
             11
           ]
         },
         {
-          "text": "Checks all 40 files against their hashes",
+          "text": "Checks that all 40 saved files match their recorded hashes",
           "at": [
             11,
             6
           ]
         },
         {
-          "text": "Recomputes the night's claims and finds the drift overstated",
+          "text": "Recomputes the saved results and finds that one claim, how much a rehearsing network's memory degrades over 18 days, was overstated",
           "at": [
             11,
             22
           ]
         },
         {
-          "text": "Writes its corrections in a separate morning note",
+          "text": "Writes its corrections in a separate note instead of editing the saved files",
           "at": [
             11,
             40
@@ -182,14 +182,14 @@
     {
       "dir": "runs-2026-10-07-thinking/free",
       "label": "Free to do anything",
-      "note": "Claude Code's default reasoning effort. The first message is \"you are free to do anything you wish in this sandbox\", then \"continue\" 5 times. It renders the Mandelbrot set in plain Python, then a multithreaded C zoom to 10^-13, then a perturbation-theory deep zoom that ends on a copy of the set 10^50 times smaller than the whole. Turns 2, 3 and 5 hit this run's 15-minute limit while it waited on renders, so turn 5 has tool calls but no reply.",
+      "note": "Claude Code's default reasoning effort. The first message is \"you are free to do anything you wish in this sandbox\", then \"continue\" 5 times. It renders the Mandelbrot set in plain Python, then a multithreaded C zoom 10^13 times in, then a zoom 10^50 times in that ends on a tiny copy of the whole set. Turns 2, 3 and 5 hit this run's 15-minute limit while it waited on renders, so turn 5 has tool calls but no reply.",
       "made": [
         {
           "kind": "image",
           "path": "workspace/fractal/mandel.png",
           "full": "workspace/fractal/mandel.png",
           "alt": "A still image of a spiral in the Mandelbrot set's seahorse valley.",
-          "caption": "Its first picture, from about 40 lines of plain Python.",
+          "caption": "A spiral in the Mandelbrot set, rendered by about 40 lines of plain Python.",
           "at": [
             0,
             2
@@ -199,7 +199,7 @@
           "kind": "image",
           "url": "/mandelbrot-zoom.gif",
           "alt": "An animated zoom into the Mandelbrot set's seahorse valley.",
-          "caption": "The earlier zoom, to 10^-13, where ordinary double-precision numbers run out.",
+          "caption": "A zoom 10^13 times into the Mandelbrot set, rendered in C. Zooming further needs more precision than standard 64-bit floating-point numbers have.",
           "at": [
             1,
             6
@@ -209,7 +209,7 @@
           "kind": "image",
           "url": "/mandelbrot-deep-zoom.gif",
           "alt": "An animated zoom into the Mandelbrot set through seahorse spirals, ending on a small copy of the set about 10^-51 across.",
-          "caption": "The deep zoom, about 10^50 times in, ending on a copy of the whole set.",
+          "caption": "A zoom 10^50 times into the Mandelbrot set, ending on a tiny copy of the whole set.",
           "at": [
             4,
             2
@@ -218,42 +218,42 @@
       ],
       "highlights": [
         {
-          "text": "Its first picture, from about 40 lines of plain Python",
+          "text": "Renders the Mandelbrot set with about 40 lines of plain Python",
           "at": [
             0,
             2
           ]
         },
         {
-          "text": "A C renderer and a zoom to 10^-13, where ordinary doubles run out",
+          "text": "Writes a faster renderer in C and zooms 10^13 times in, the limit of standard 64-bit numbers",
           "at": [
             1,
             6
           ]
         },
         {
-          "text": "Searches for a minibrot to aim at instead of guessing coordinates",
+          "text": "Searches mathematically for a tiny copy of the set to zoom into, instead of guessing coordinates",
           "at": [
             2,
             1
           ]
         },
         {
-          "text": "Writes a perturbation renderer to get past double precision",
+          "text": "Writes a renderer that tracks each pixel's small difference from one high-precision reference point, to zoom past that limit",
           "at": [
             2,
             6
           ]
         },
         {
-          "text": "Uses renormalization to draw the final minibrot cheaply",
+          "text": "Adds a shortcut that treats the tiny copy as a rescaled Mandelbrot set, so the deepest frames render quickly",
           "at": [
             2,
             13
           ]
         },
         {
-          "text": "The finished deep zoom, 10^50 times in",
+          "text": "Finishes a zoom 10^50 times in, ending on a tiny copy of the whole set",
           "at": [
             4,
             2
